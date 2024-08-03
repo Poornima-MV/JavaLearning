@@ -1,0 +1,73 @@
+<html>
+<head>
+
+
+<script type="text/javascript">
+function loadScript(){
+    var apiUrl = 'http://localhost:8081/execute';
+    fetch(apiUrl).then(response => {
+    	alert(response.json());
+      return response.json();
+    }).then(data => {
+      // Work with JSON data here
+      console.log(data);
+    }).catch(err => {
+      // Do something for an error here
+    });
+}
+
+
+</script>
+<style>
+table, th, td {
+	  border: 1px solid black;
+	  border-collapse: collapse;
+	}
+</style>
+
+
+</head>
+
+<body>
+<form id="htmlBasics">
+<h1>Contents</h1>
+		<table>
+			<tr>
+				<td><a href="http://localhost:8081/loadJavaCode?concept=access">Basic
+						Access modifiers- Java class</a></td>
+				<td><a href="http://localhost:8081/execute?concept=access">Basic Access
+						modifiers- Output</a></td>
+			</tr>
+			<tr>
+				<td><a href="http://localhost:8081/loadJavaCode?concept=collections">Collections
+				-Java class</a></td>
+				<td><a href="http://localhost:8081/execute?concept=collections">Collections - Output</a></td>
+			</tr>
+			<tr>
+				<td><a href="http://localhost:8081/loadJavaCode?concept=executor">Executors
+				-Java class</a></td>
+				<td><a href="http://localhost:8081/execute?concept=executor">Executors - Output</a></td>
+			</tr>
+			<tr>
+				<td><a href="http://localhost:8081/loadJavaCode?concept=stream">Streams
+				-Java class</a></td>
+				<td><a href="http://localhost:8081/execute?concept=stream">Streams - Output</a></td>
+			</tr>
+			<tr>
+				<td><a href="http://localhost:8081/loadJavaCode?concept=thread">Thread
+				-Java class</a></td>
+				<td><a href="http://localhost:8081/execute?concept=thread">Thread - Output</a></td>
+			</tr>
+			<tr>
+				<td><a href="http://localhost:8081/loadJavaCode?concept=sound">Sound -POC
+				-Java class</a></td>
+				<td><a href="http://localhost:8081/execute?concept=sound">Sound POC - Output</a></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+
+
+
+</html>

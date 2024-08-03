@@ -1,0 +1,60 @@
+!
+d
+l
+r
+o
+W
+ 
+o
+`
+l
+l
+e
+H
+Reversed String---->!dlroW o`lleH
+Hell`o World!
+Sorted
+1
+7
+198
+234
+678
+400
+23267
+Poornima
+Madathum
+Kandy
+Vadakeyil
+Streams intermediate operations- map()
+1
+49
+39204
+54756
+459684
+160000
+541353289
+Streams intermediate operations- filter()
+Poornima
+Streams intermediate operations- sorted()
+Kandy
+Madathum
+Poornima
+Vadakeyil
+Streams Terminal operations- foreEach()
+198
+234
+400
+678
+23267
+Streams Terminal operations- reduce()
+Reduced list---1510
+Concatenated--- Poornima Madathum Kandy Vadakeyil
+list compare
+water
+lilly
+rose
+hibiscus
+Dahlia
+Camilla
+random
+hashcode value-->706065361second value-->706065361third value-->641421233
