@@ -10,7 +10,7 @@ import java.util.Map.Entry;
 public class BasicsCollections {
 	
 	public static void main(String args[]) throws FileNotFoundException { //Supply this in run config
-		System.setOut(new PrintStream(new FileOutputStream("/Users/jibinkalyattil/eclipse-workspace/artefact01/src/main/java/artefact01/output.txt")));
+		System.setOut(new PrintStream(new FileOutputStream("src/main/java/artefact01/output.txt")));
 		System.out.println(args);
 		
 		//Both map implementation does key overriding if duplicate keys

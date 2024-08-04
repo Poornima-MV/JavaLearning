@@ -32,7 +32,7 @@ public class BasicsThreadStreams {
 	
 	
 	public static void main(String[] args) throws InterruptedException, FileNotFoundException {
-		System.setOut(new PrintStream(new FileOutputStream("/Users/jibinkalyattil/eclipse-workspace/artefact01/src/main/java/artefact01/output.txt")));
+		System.setOut(new PrintStream(new FileOutputStream("src/main/java/artefact01/output.txt")));
 		//String reverse
 		String testString = "Hell`o World!";
 		char[] charArray = testString.toCharArray();

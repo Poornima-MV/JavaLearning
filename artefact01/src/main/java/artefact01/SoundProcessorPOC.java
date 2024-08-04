@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class SoundProcessorPOC {
 	
 	public static void main(String[] args) throws FileNotFoundException {
-		System.setOut(new PrintStream(new FileOutputStream("/Users/jibinkalyattil/eclipse-workspace/artefact01/src/main/java/artefact01/output.txt")));
+		System.setOut(new PrintStream(new FileOutputStream("src/main/java/artefact01/output.txt")));
 		File myFile1 = new File("/Users/jibinkalyattil/eclipse-workspace/Recording 7.m4a");
 		File myFile2 = new File("/Users/jibinkalyattil/eclipse-workspace/Recording 8.m4a");
 		byte[] byteArray1 = new byte[(int) myFile1.length()];

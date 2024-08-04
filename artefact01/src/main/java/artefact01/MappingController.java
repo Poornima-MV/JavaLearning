@@ -12,6 +12,9 @@ import org.springframework.core.io.UrlResource;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -31,7 +34,7 @@ public class MappingController {
 
 		// Path to the PDF file
 		Path path = Paths.get(
-				"/Users/jibinkalyattil/eclipse-workspace/artefact01/src/main/java/artefact01/javalearning.html");
+				"src/main/java/artefact01/javalearning.html");
 		// Load the resource
 		Resource resource = new UrlResource(path.toUri());
 		// Return ResponseEntity with PDF content type
@@ -40,13 +43,13 @@ public class MappingController {
 
 	}
 	
-	@GetMapping("/loadJavaCode")
-	public ResponseEntity<Resource> basicAccessmodifiers(@RequestParam String concept) throws MalformedURLException {
+	@GetMapping("/loadjavacode/{concept}")
+	public ResponseEntity<Resource> basicAccessmodifiers(@PathVariable("concept")  String concept) throws MalformedURLException {
 
 		// Path to the PDF file
 		String javaClassCode=getClassMappingForConcept(concept);
 		Path path = Paths.get(
-				"/Users/jibinkalyattil/eclipse-workspace/artefact01/src/main/java/artefact01/"+javaClassCode);
+				"src/main/java/artefact01/"+javaClassCode);
 		// Load the resource
 		Resource resource = new UrlResource(path.toUri());
 		// Return ResponseEntity with PDF content type
@@ -83,14 +86,14 @@ public class MappingController {
 		return classMapped;
 	}
 
-	@GetMapping("/execute")
+	@GetMapping("/execute/{concept}")
 	public ResponseEntity<Resource> basicAccessmodifiersExecute(
-			@RequestParam String concept) throws IOException, InterruptedException, ExecutionException {
+			@PathVariable ("concept") String concept) throws IOException, InterruptedException, ExecutionException {
 		// Path to the PDF file
 		executeClassMappedToConcept(concept);
 
 		Path path = Paths.get(
-				"/Users/jibinkalyattil/eclipse-workspace/artefact01/src/main/java/artefact01/output.txt");
+				"src/main/java/artefact01/output.txt");
 		// Load the resource
 		Resource resource = new UrlResource(path.toUri());
 		// Return ResponseEntity with PDF content type

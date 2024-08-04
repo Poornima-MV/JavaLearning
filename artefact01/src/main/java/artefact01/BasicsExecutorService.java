@@ -14,7 +14,7 @@ public class BasicsExecutorService {
 
 	public static void main(String[] args)
 			throws InterruptedException, ExecutionException, FileNotFoundException {
-		System.setOut(new PrintStream(new FileOutputStream("/Users/jibinkalyattil/eclipse-workspace/artefact01/src/main/java/artefact01/output.txt")));
+		System.setOut(new PrintStream(new FileOutputStream("src/main/java/artefact01/output.txt")));
 		ExecutorService executorService = Executors.newFixedThreadPool(10);
 
 		Set<Callable<String>> callables = new HashSet<Callable<String>>();

@@ -61,7 +61,7 @@ public class BasicsAccessModifiers {
 	// }
 
 	public static <HotSpotDiagnosticMXBean> void main(String[] args) throws FileNotFoundException {
-		System.setOut(new PrintStream(new FileOutputStream("/Users/jibinkalyattil/eclipse-workspace/artefact01/src/main/java/artefact01/output.txt")));
+		System.setOut(new PrintStream(new FileOutputStream("src/main/java/artefact01/output.txt")));
 		
 		BasicsAccessModifiers LearningBasicsAccessModifiers = new BasicsAccessModifiers();
 		System.out.println(
